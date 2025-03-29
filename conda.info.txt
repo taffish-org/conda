@@ -1,0 +1,9 @@
+# <conda:3.12 | KaiyuanHan | 2025-03-29>
+ARGS
+    <else>
+        cat ::*LOAD-DIR*::../conda.info.txt
+    <main>
+        conda ::in::
+RUN
+    <container:taf-conda-v3.12:ghcr.io/taffish-org/conda:3.12>
+        ::*MAIN*::
